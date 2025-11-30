@@ -1,0 +1,16 @@
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\bin\Debug\net8.0-windows\CalculadoraProyect.exe
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\bin\Debug\net8.0-windows\CalculadoraProyect.deps.json
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\bin\Debug\net8.0-windows\CalculadoraProyect.runtimeconfig.json
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\bin\Debug\net8.0-windows\CalculadoraProyect.dll
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\bin\Debug\net8.0-windows\CalculadoraProyect.pdb
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.Form1.resources
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.AssemblyInfo.cs
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.dll
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\refint\CalculadoraProyect.dll
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.pdb
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\CalculadoraProyect.genruntimeconfig.cache
+C:\Users\PC\OneDrive - Universidad Tecnológica de Panamá\II Desarrollo IV\Repos\calculadoraCientificaPY\CalculadoraProyect\obj\Debug\net8.0-windows\ref\CalculadoraProyect.dll
