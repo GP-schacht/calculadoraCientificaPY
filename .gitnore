@@ -1,0 +1,51 @@
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos de dependencias
+packages/
+*.nupkg
+
+# Archivos de configuración local
+*.local
+*.cache
+*.log
+
+# Archivos de publicación
+publish/
+*.publishsettings
+
+# Archivos de base de datos local
+*.mdf
+*.ldf
+
+# Archivos generados por herramientas
+Generated Files/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Archivos de configuración de Rider/Resharper
+.idea/
+*.DotSettings.user
+
+# Archivos de cobertura y pruebas
+TestResults/
+*.coverage
+*.coveragexml
+
+# Archivos de Azure
+*.azurePubxml
+
