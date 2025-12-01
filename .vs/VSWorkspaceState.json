@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CalculadoraAPI",
+    "\\CalculadoraAPI\\Areas",
+    "\\CalculadoraAPI\\Areas\\HelpPage",
+    "\\CalculadoraAPI\\Areas\\HelpPage\\Controllers",
+    "\\CalculadoraAPI\\Areas\\HelpPage\\ModelDescriptions",
+    "\\CalculadoraAPI\\Areas\\HelpPage\\Models",
     "\\CalculadoraProyect"
   ],
-  "SelectedNode": "\\CalculadoraProyect\\CalculadoraProyect.csproj",
+  "SelectedNode": "\\CalculadoraAPI\\Areas\\HelpPage\\ModelDescriptions\\ModelNameHelper.cs",
   "PreviewInSolutionExplorer": false
 }
