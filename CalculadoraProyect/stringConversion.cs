@@ -124,6 +124,58 @@ namespace CalculadoraProyect
             }
             return pila.Pop();
         }
+
+
+        public string ObtenerTipoOperacion(string expresion)
+        {
+            // Normalizar la expresión
+            expresion = expresion.Replace("x", "*").Replace("√", "sqrt");
+
+            // Lista de operadores
+            var operadores = new List<string> { "+", "-", "*", "/", "^" };
+
+            // Contar operadores en la expresión
+            int contador = 0;
+            string operadorEncontrado = "";
+
+            foreach (char c in expresion)
+            {
+                if (operadores.Contains(c.ToString()))
+                {
+                    contador++;
+                    operadorEncontrado = c.ToString();
+                }
+            }
+
+            // Si contiene "sqrt" lo consideramos raíz
+            if (expresion.Contains("sqrt"))
+            {
+                contador++;
+                operadorEncontrado = "sqrt";
+            }
+
+            // Determinar tipo
+            if (contador == 0)
+                return "Sin operación";
+            else if (contador == 1)
+            {
+                switch (operadorEncontrado)
+                {
+                    case "+": return "Suma";
+                    case "-": return "Resta";
+                    case "*": return "Multiplicación";
+                    case "/": return "División";
+                    case "^": return "Potencia";
+                    case "sqrt": return "Raíz";
+                    default: return "Desconocida";
+                }
+            }
+            else
+            {
+                return "Compuesta";
+            }
+        }
+
     }
 
 }

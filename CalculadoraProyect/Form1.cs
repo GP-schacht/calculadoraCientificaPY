@@ -1,3 +1,9 @@
+
+using System;
+using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.Data.SqlClient; 
+
 namespace CalculadoraProyect
 {
     public partial class Form1 : Form
@@ -7,8 +13,8 @@ namespace CalculadoraProyect
             InitializeComponent();
             
         }
-
-   
+        string connectionString = "Server=LAPTOP-7RHH446U\\SQLEXPRESS;Database=calculosReg;Trusted_Connection=True;TrustServerCertificate=True;";
+        string tipo = "";
         private void NumberButton_Click(object sender, EventArgs e)
         {
 
@@ -63,20 +69,37 @@ namespace CalculadoraProyect
         private void btnIgual_Click(object sender, EventArgs e)
         {
             try
-    {
-        stringConversion strCon = new stringConversion();
-        var expr = txtPantalla.Text ?? string.Empty;
-        var result = strCon.EvaluarExpresion(expr);
-        txtPantalla.Text = result.ToString() ?? string.Empty;
-    }
-    catch (FormatException fex)
-    {
-        MessageBox.Show("Expresión inválida: " + fex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-    }
-    catch (Exception ex)
-    {
-        MessageBox.Show("Error al evaluar la expresión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-    }
+            {
+                stringConversion strCon = new stringConversion();
+                var expr = txtPantalla.Text ?? string.Empty;
+                var result = strCon.EvaluarExpresion(expr);
+                txtPantalla.Text = result.ToString() ?? string.Empty;
+                tipo = strCon.ObtenerTipoOperacion(expr);
+            }
+            catch (FormatException fex)
+            {
+                MessageBox.Show("Expresión inválida: " + fex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al evaluar la expresión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd;
+
+                cmd = new SqlCommand("INSERT INTO OperacionesLog (Operacion, TipoOperacion) VALUES (@Operacion, @TipoOperacion)", con);
+
+                cmd.Parameters.AddWithValue("@Operacion", txtPantalla.Text);
+                cmd.Parameters.AddWithValue("@TipoOperacion", tipo);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+
+
+            }
         }
 
         private void btnCE_Click(object sender, EventArgs e)
